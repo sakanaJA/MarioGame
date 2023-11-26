@@ -1,11 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-    <title>Tittle</title>
-    <link rel="icon" type="image/x-icon" href="img/haku.png" />
-    <link rel="stylesheet" href="css/styles.css">
+<meta charset="UTF-8">
+<title>Mini Mario Game</title>
+<style>
+  #gameScreen {
+    width: 800px;
+    height: 400px;
+    background-color: skyblue; /* 修正: カラー名に変更 */
+    overflow: hidden;
+    position: relative;
+  }
+  #player {
+    width: 50px;
+    height: 50px;
+    background-color: red; /* 修正: カラー名に変更 */
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+  }
+</style>
 </head>
 <body>
-    <script src="js/script.js"></script>
+
+<div id="gameScreen">
+  <div id="player"></div>
+</div>
+
+<script src="js/script.js"></script>
 </body>
 </html>
